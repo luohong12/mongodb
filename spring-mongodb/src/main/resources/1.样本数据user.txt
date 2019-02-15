@@ -1,0 +1,84 @@
+﻿db.users.drop();
+var user1 = {
+        "username" : "lison",
+        "country" : "china",
+        "address" : {
+                "aCode" : "411000",
+                "add" : "长沙"
+        },
+        "favorites" : {
+                "movies" : ["杀破狼2","战狼","雷神1"],
+                "cites" : ["长沙","深圳","上海"]
+        },
+        "age" : 18,
+	   "salary":NumberDecimal("18889.09"),
+       "lenght" :1.79
+	    
+};
+var user2 = {
+        "username" : "sean",
+        "country" : "English",
+        "address" : {
+                "aCode" : "311000",
+                "add" : "地址"
+        },
+        "favorites" : {
+                "movies" : ["复仇者联盟","战狼","雷神1"],
+                "cites" : ["西安","东京","上海"]
+        },
+        "age" : 24,
+       "salary":NumberDecimal("7889.09"),
+       "lenght" :1.35
+};
+var user3 ={
+        "username" : "jack",
+        "country" : "japan",
+        "address" : {
+                "aCode" : "411000",
+                "add" : "长沙"
+        },
+        "favorites" : {
+                "movies" : ["肉蒲团","一路向西","倩女幽魂"],
+                "cites" : ["东莞","深圳","东京"]
+        },
+        "age" : 22,
+       "salary":NumberDecimal("6666.66"),
+       "lenght" :1.85
+};
+var user4 =
+{
+        "username" : "mark",
+        "country" : "USA",
+        "address" : {
+                "aCode" : "411000",
+                "add" : "长沙"
+        },
+        "favorites" : {
+                "movies" : ["蜘蛛侠","钢铁侠","蝙蝠侠"],
+                "cites" : ["青岛","东莞","上海"]
+        },
+        "age" : 20,
+       "salary":NumberDecimal("6398.22"),
+       "lenght" :1.77
+};
+
+var user5 =
+{
+        "username" : "test",
+        "country" : "UK",
+        "address" : {
+                "aCode" : "411000",
+                "add" : "TEST"
+        },
+        "favorites" : {
+                "movies" : ["蜘蛛侠","钢铁侠","蝙蝠侠"],
+                "cites" : ["青岛","东莞","上海"]
+        },
+       "salary":NumberDecimal("1969.88")
+};
+
+db.users.insert(user1);
+db.users.insert(user2);
+db.users.insert(user3);
+db.users.insert(user4);
+db.users.insert(user5);
